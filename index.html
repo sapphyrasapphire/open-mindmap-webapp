@@ -1,24 +1,36 @@
+<!--
+  Open Mindmap Webapp
+
+  https://github.com/sapphyrasapphire/open-mindmap-webapp
+
+  Copyright (C) 2024 sapphyra
+
+  This document is part of a program licensed under GPL 3.0
+
+  See <https://www.gnu.org/licenses/> for more info.
+-->
 <!DOCTYPE html>
 <html>
-<head>
-<title>Mindmap</title>
-<link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="script.js">
-</script>
-</head>
-<body>
+  <head>
+    <title>Mindmap</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
     <div id="container">
-        <main>
-            
-        </main>
-        <aside id="toolbar">
-            
-        </aside>
-        <aside id="inspector" class="drag">
-            <span class="heading">Inspector</span>
-        </aside>
+      <main>
+
+      </main>
+      <aside id="toolbar">
+
+      </aside>
+      <aside id="inspector" class="drag">
+	<span class="heading">Inspector</span>
+      </aside>
     </div>
     <footer id="infobar"></footer>
     <input id="import" type="file" onchange="loadNodeDataFromFile();" accept=".json">
-</body>
+  </body>
 </html>

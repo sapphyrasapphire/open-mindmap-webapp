@@ -1,0 +1,4 @@
+# .gitignore for open-mindmap-webapp
+
+# ignore backups
+*~
