@@ -1,0 +1,160 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #222;
+	color: #DDD;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100vh;
+	width: 100vw;
+	font-family: sans-serif;
+}
+
+body[data-cursor-state="move"], *[data-drag="true"], *[data-drag="true"] * {
+    cursor: move;
+}
+
+/*
+#container {
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+*/
+
+a, a:visited {
+    color: #ADF;
+}
+
+a:hover, a:active {
+    color: #CEF;
+}
+
+#infobar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: .25em;
+    font-size: .8em;
+    background: #222A;
+    color: #DDF;
+}
+
+#inspector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: .5em;
+    border: 1px solid #333;
+    position: absolute;
+    
+    left: calc(100vw - 300px);
+    top: calc(100vh - 200px);
+    opacity: .5;
+    background: #222;
+    transition: opacity .5s ease-in-out;
+}
+
+#inspector:active, #inspector:hover {
+    opacity: 1.0;
+}
+
+#toolbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+#toolbar button {
+    font-family: "Segoe UI", sans-serif;
+    background: #ABF;
+    padding: .25em .75em;
+}
+
+#toolbar button:hover {
+    background: #ADF;
+}
+
+.heading {
+    background: #333;
+    padding: .25em;
+    font-weight: bold;
+    user-select: none;
+}
+
+textarea {
+    resize: none;
+    min-height: 5em;
+}
+
+main {
+    min-width: 15%;
+}
+
+.node {
+    padding: .5em;
+    border: 1px solid #DDD;
+    border-radius: 1em;
+    position: absolute;
+    background: #333;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.nheader {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+}
+
+.selected {
+    border-color: #2FA;
+}
+
+.key {
+    font-weight: bold;
+    font-family: monospace;
+    border: 1px solid #DDD;
+    padding: .15em;
+}
+
+dialog {
+    background: #445;
+    color: #DDD;
+    border: 1px solid #DDD;
+    padding: 1em;
+}
+
+dialog > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+dialog button {
+    background: #AEF;
+    color: #004;
+    padding: .5em;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: .25em;
+}
+
+dd {
+    padding: .25em;
+    margin-bottom: .25em;
+}
+
+svg {
+    pointer-events: none;
+}
+
+#import {
+    visibility: hidden;
+    position: absolute;
+}
